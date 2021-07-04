@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="form.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap" rel="stylesheet">
+    </head> 
+
+    <body>
+        <div id="form" class="list">
+            <h3>Servicies:</h3>
+            <div class="service" @click="check1=!check1" :style="changeColor1()" v-on:click="calcPrice(1)"><p>Web Developement</p><p class="price">${{ser1}}</p></div>
+            <div class="service" @click="check2=!check2" :style="changeColor2()" v-on:click="calcPrice(2)"><p>Web Design<p class="price">${{ser2}}</p></p></div>
+            <div class="service" @click="check3=!check3" :style="changeColor3()" v-on:click="calcPrice(3)"><p>Integration<p class="price">${{ser3}}</p></p></div>
+            <div class="service" @click="check4=!check4" :style="changeColor4()" v-on:click="calcPrice(4)"><p>Training<p class="price">${{ser4}}</p></p></div>
+            <div class="total"><p>Total:<p class="price">${{total}}</p></p></div>
+        </div>     
+        <script src="vue.js"></script>
+        <script src="Form.js"></script>
+      
+    </body>
+</html>
